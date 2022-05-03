@@ -1,0 +1,77 @@
+/* @import url('../fonts/OCEAN_6_Brushed_Black_Edition.ttf'); */
+@font-face {
+    font-family: 'Ocean';
+    src: local('Ocean'), url(../fonts/OCEAN_6_Brushed_Black_Edition.ttf) format('truetype');
+}
+/* font-family: Ocean, serif; */
+:root {
+    --rosa : #F4364C;
+    --amarelo : #FCA238;
+    --branco : #FFF8F3;
+    --ciano : #14586B;
+    --preto : #282725;
+}
+
+.sub-tittle{
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+
+.tittle{
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+
+.wid-half{
+    width: 45%;
+    height: 100%;
+}
+
+#luana-img{
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+}
+
+#luana-img:hover{
+    transform: scale(1.01);
+    transition: ease-in-out 0.5s;
+}
+
+.text-caipora{
+    font-size: 18px;
+}
+
+.galeria-section{
+    width: 70%;
+}
+
+#galeria-inner{
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+}
+
+#folclore-br{
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+}
+
+#folclore-br:hover{
+    transform: scale(1.01);
+    transition: ease-in-out 0.5s;
+}
+
+#catarse-img{
+    width: 70%;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+}
+
+#dublagem-img{
+    width: 70%;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+}

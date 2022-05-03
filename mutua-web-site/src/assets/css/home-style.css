@@ -1,0 +1,304 @@
+/* @import url('../fonts/OCEAN_6_Brushed_Black_Edition.ttf'); */
+@font-face {
+    font-family: 'Ocean';
+    src: local('Ocean'), url(../fonts/OCEAN_6_Brushed_Black_Edition.ttf) format('truetype');
+}
+/* font-family: Ocean, serif; */
+:root {
+    --rosa : #F4364C;
+    --amarelo : #FCA238;
+    --branco : #FFF8F3;
+    --ciano : #14586B;
+    --preto : #282725;
+}
+
+header{
+    width: 100%;
+    height: 75px;
+    background-color: var(--amarelo);
+}
+
+.header-container{
+    width: 70%;
+    height: 100%;
+}
+
+.nav-header{
+    height: 100%;
+}
+
+.nav-header ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.list-item-header{
+    padding: 0 25px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.list-item-header{
+    padding: 20px;
+    transition: 0.3s;
+    z-index: 1;
+    position: relative;
+}
+
+.list-item-header::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--rosa);
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0;
+    transition: 0.3s;
+    bottom: -2px;
+    left: 0;
+}
+
+.list-item-header:not(.is-active):hover::before{
+    opacity: 1;
+    bottom: 0;
+}
+
+.list-item-header:not(.is-active):hover{
+    color: var(--rosa);
+}
+
+.nav-indicator{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    transition: 0.4s;
+    height: 5px;
+    z-index: 1;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.social-media-header{
+    height: 100%;
+}
+
+.social-media-icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.social-media-icon:hover{
+    transform: scale(1.1);
+    transition: all ease-in 0.2s;
+}
+
+/* Banner */
+
+.banner-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/caip_recompensas_bgFiltro_001.png);
+    background-size: cover;
+}
+
+.banner-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.banner-grad{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #2D2929 0%, rgba(196, 196, 196, 0) 110.77%);
+    position: absolute;
+}
+
+.banner-container{
+    height: 100%;
+    position: relative;
+}
+
+.banner-info{
+    text-align: center;
+    color: var(--branco);
+    margin-top: 100px;
+}
+
+.banner-info h1{
+    font-size: 72px;
+    font-family: Ocean, serif;
+    text-transform: uppercase;
+}
+
+.banner-info p{
+    font-size: 18px;
+}
+
+.button-saiba-mais{
+    width: 190px;
+    height: 55px;
+    font-family: Ocean, serif;
+    font-size: 30px;
+    letter-spacing: 0.03em;
+    background-color: transparent;
+    color: var(--branco);
+    border: solid 2px var(--branco);
+    cursor: pointer;
+}
+
+.button-saiba-mais:hover, .button-saiba-mais:focus{
+    box-shadow: inset 15.5em 0 0 0 var(--branco);
+    color: var(--amarelo);
+    border: 2px solid var(--amarelo);
+    transition: all ease-in 0.2s;
+}
+
+.cards-section{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.cards-container{
+    width: 70%;
+}
+
+.titulo-cards-section h2{
+    font-size: 62px;
+    font-family: Ocean, serif;
+}
+
+.linha{
+    width: 100px;
+    height: 6px;
+    background-color: var(--preto);
+    border-radius: 3px;
+}
+
+.cards-content{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.caipora{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card-projetos{
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.6));
+}
+
+.card-projetos:hover{
+    transform: scale(1.01);
+}
+
+.black-bg{
+    position: relative;
+}
+
+.black-bg::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 38, 38, 0.6);
+    border-radius: 15px;
+}
+
+.card-projetos p {
+    font-size: 48px;
+    color: var(--branco);
+    letter-spacing: 1.5px;
+    font-family: Ocean, serif;
+    z-index: 999;
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+}
+
+.text-about{
+    width: 60%;
+    font-size: 22px;
+}
+
+.image-about{
+    width: 40%;
+}
+
+#segundo-btn{
+    color: var(--rosa);
+    border: solid 2px var(--rosa);
+}
+
+#segundo-btn:hover, #segundo-btn:focus{
+    box-shadow: inset 15.5em 0 0 0 var(--rosa);
+    color: var(--branco);
+    border: 2px solid #282C2E;
+    transition: all ease-in 0.2s;
+}
+
+footer{
+    height: 200px;
+    background-color: var(--amarelo);
+}
+
+.textinho-footer{
+    margin: 0;
+}
+
+.footer-content{
+    height: 70%;
+}
+
+.projects__card {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  .projects__card img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .projects__modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    background: rgba(41, 38, 38, 0.6);
+    display: grid;
+    align-items: flex-end;
+    padding: 1.5rem 1.25rem;
+    transition: .3s;
+  }
+  
+  .projects__subtitle, 
+  .projects__title {
+    color: #fff;
+    margin-left: 5px;
+  }
+  
+  .projects__subtitle {
+    font-size: 18px;
+  }
+  
+  .projects__title {
+    font-size: 24px;
+  }
+  
+  .projects__card:hover .projects__modal {
+    bottom: 0;
+  }

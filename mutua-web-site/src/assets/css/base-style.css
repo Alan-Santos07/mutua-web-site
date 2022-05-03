@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+/* @import url('../fonts/OCEAN_6_Brushed_Black_Edition.ttf'); */
+@font-face {
+    font-family: 'Ocean';
+    src: local('Ocean'), url(../fonts/OCEAN_6_Brushed_Black_Edition.ttf) format('truetype');
+}
+/* font-family: Ocean, serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --rosa : #F4364C;
+    --amarelo : #FCA238;
+    --branco : #FFF8F3;
+    --ciano : #14586B;
+}
+
+.flex{
+    display: flex;
+}
+
+.ai-center{
+    align-items: center;
+}
+
+.ai-flex-start{
+    align-items: flex-start;
+}
+
+.ai-flex-end{
+    align-items: flex-end;
+}
+
+.jc-space-btw{
+    justify-content: space-between;
+}
+
+.jc-space-eve{
+    justify-content: space-evenly;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.font-ocean{
+    font-family: Ocean, serif;
+    text-transform: uppercase;
+}

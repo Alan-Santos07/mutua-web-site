@@ -1,0 +1,69 @@
+/* @import url('../fonts/OCEAN_6_Brushed_Black_Edition.ttf'); */
+@font-face {
+    font-family: 'Ocean';
+    src: local('Ocean'), url(../fonts/OCEAN_6_Brushed_Black_Edition.ttf) format('truetype');
+}
+/* font-family: Ocean, serif; */
+:root {
+    --rosa : #F4364C;
+    --amarelo : #FCA238;
+    --branco : #FFF8F3;
+    --ciano : #14586B;
+    --preto : #282725;
+}
+
+#vivart{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+}
+
+.centrinho{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btn-vivart{
+    color: var(--rosa);
+    border: solid 2px var(--rosa);
+}
+
+#btn-vivart:hover, #btn-vivart:focus{
+    box-shadow: inset 15.5em 0 0 0 var(--rosa);
+    color: var(--branco);
+    border: 2px solid #282C2E;
+    transition: all ease-in 0.2s;
+}
+
+#mb-0{
+    margin-bottom: 0;
+}
+
+.equipe{
+    width: 100%;
+}
+
+.fotinha{
+    padding: 0 0;
+    width: 32%;
+}
+
+.fotinha img{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+}
+
+#btn-vivart-cont{
+    width: 210px;
+    color: var(--rosa);
+    border: solid 2px var(--rosa);
+}
+
+#btn-vivart-cont:hover, #btn-vivart-cont:focus{
+    box-shadow: inset 15.5em 0 0 0 var(--rosa);
+    color: var(--branco);
+    border: 2px solid #282C2E;
+    transition: all ease-in 0.2s;
+}
