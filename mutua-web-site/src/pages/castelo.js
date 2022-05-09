@@ -9,8 +9,7 @@ import Header from "../assets/components/header";
 import Footer from "../assets/components/footer";
 
 //Import das imagens;
-import Luana from '../assets/img/img_luana.jpg';
-import Castelo from '../assets/img/mutua_site_castelo_banner.png'
+import Castelo from '../assets/img/castelo/poster_castelo.png'
 
 export default class CasteloPage extends Component {
     constructor(props) {
@@ -26,7 +25,7 @@ export default class CasteloPage extends Component {
                 <section className='cards-section flex jc-center'>
                     <div className='cards-container flex flex-column ai-center text-center mb-5'>
                         <div className='w-100 flex ai-center jc-center mb-5'>
-                            <h2 className='tittle font-ocean'>Castelo</h2>
+                            <h2 className='tittle font-ocean'>Castelo Rá-Tim-bum</h2>
                         </div>
                         <div className='w-100 flex ai-center jc-center mb-5'>
                             <p className='text-caipora'>O projeto de animação (não oficial) do programa infantil  "Castelo Rá-Tim-Bum", da TV Cultura, se iniciou através de uma fã-arte criada por nossa equipe em 2020. O trabalho, somente em nossas páginas, atingiu mais de 480 mil visualizações e aproximadamente 6 mil compartilhamentos no Facebook. Além disso, o mesmo também foi publicado em diversos outros meios, como o blog Garotas Geek, DesignerNerd, etc.</p>
@@ -40,7 +39,7 @@ export default class CasteloPage extends Component {
                     </div>
                 </section>
                 <section className='cards-section flex jc-center'>
-                    <h1 className='tittle font-ocean'>Vem ai...</h1>
+                    <h1 className='tittle font-ocean'>Vem aÍ...</h1>
                 </section>
                 <Footer />
             </section>

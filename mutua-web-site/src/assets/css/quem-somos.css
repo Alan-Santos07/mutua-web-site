@@ -27,6 +27,8 @@
 #btn-vivart{
     color: var(--rosa);
     border: solid 2px var(--rosa);
+    height: 80px;
+    width: 200px;
 }
 
 #btn-vivart:hover, #btn-vivart:focus{
@@ -42,15 +44,17 @@
 
 .equipe{
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .fotinha{
     padding: 0 0;
-    width: 32%;
+    width: 30%;
 }
 
 .fotinha img{
-    margin-bottom: 20px;
     border-radius: 10px;
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
 }
@@ -66,4 +70,77 @@
     color: var(--branco);
     border: 2px solid #282C2E;
     transition: all ease-in 0.2s;
+}
+
+.projects__card_equipe img {
+    width: 100%;
+}
+
+.projects__card_equipe {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+#filtro-img{
+    width: 100%;
+    max-width: 580px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+}
+
+.card-header{
+    background-color: var(--rosa);
+}
+
+.btn-link{
+    color: var(--amarelo);
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.btn-link:hover{
+    color: var(--ciano);
+}
+
+.card-principios{
+    margin-top: 35px;
+    width: 100%;
+    padding: 20px 20px;
+    border: solid 0.5px #c1c1c1;
+    border-radius: 10px;
+}
+
+.bolinha{
+    width: 150px;
+    height: 5px;
+    background-color: var(--rosa);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.movimento-ida{
+    margin-left: 225px;
+    transition: all ease 0.2s;
+}
+
+.movimento-volta{
+    margin-right: 225px;
+    transition: all ease 0.2s;
+}
+
+.fundinho-um{
+    background-color: var(--branco);
+    color: var(--amarelo);
+    border: 3px solid var(--amarelo);
+    transition: all ease-in 0.4s;
+}
+
+.fundinho-dois{
+    background-color: var(--branco);
+    color: var(--amarelo);
+    border: 3px solid var(--amarelo);
+    transition: all ease-in 0.4s;
 }

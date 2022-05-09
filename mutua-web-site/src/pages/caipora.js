@@ -10,7 +10,16 @@ import Footer from "../assets/components/footer";
 //Import das imagens;
 import Luana from '../assets/img/img_luana.jpg';
 import Filtro from '../assets/img/caip_recompensas_bgFiltro_001.png';
-import Folclore from '../assets/img/folclore_br.png'
+import Folclore from '../assets/img/folclore_br.png';
+import ConceptCabelo from '../assets/img/caipora/caipora_concept_cabelo.jpg';
+import Concept from '../assets/img/caipora/caipora_concept.jpg';
+import Festas from '../assets/img/caipora/caipora_festas.png';
+import Joaninha from '../assets/img/caipora/caipora_joaninha.jpg';
+import Poster01 from '../assets/img/caipora/caipora_poster_01.jpg';
+import Poster02 from '../assets/img/caipora/caipora_poster_02.jpg';
+import Financiamento from '../assets/img/caipora/mutua_financiamento.png';
+import VozLuana from '../assets/img/caipora/vozLuana.jpg';
+import VozMarinete from '../assets/img/caipora/vozMarinete.jpg';
 
 export default class CaiporaPage extends Component {
     constructor(props) {
@@ -29,7 +38,7 @@ export default class CaiporaPage extends Component {
                             <h2 className='tittle font-ocean'>EU SOU CAIPORA</h2>
                         </div>
                         <div>
-                            <p className='text-caipora'>"Eu Sou Caipora: A Menina e o Poder das Matas" é um curta-metragem de animação sobre um dos personagens mais conhecidos do folclore brasileiro. Criado pela Vivárte, o curta, que busca celebrar questões ambientais e socioculturais do país, também conta com a produção do ilustrador e designer Anderson Awvas, realizador do Folclore BR: Uma Nova Visão, projeto dedicado a explorar novas formas de falar sobre o folclore nacional.</p>
+                            <p className='text-caipora'>"Eu Sou Caipora: A Menina e o Poder das Matas" é um curta-metragem de animação sobre um dos personagens mais conhecidos do folclore brasileiro. Criado pela Mutua, o curta, que busca celebrar questões ambientais e socioculturais do país, também conta com a produção do ilustrador e designer Anderson Awvas, realizador do Folclore BR: Uma Nova Visão, projeto dedicado a explorar novas formas de falar sobre o folclore nacional.</p>
                         </div>
                     </div>
                 </section>
@@ -62,16 +71,32 @@ export default class CaiporaPage extends Component {
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
                         </ol>
                         <div className="carousel-inner" id='galeria-inner'>
                             <div className="carousel-item active">
-                                <img className="d-block w-100" src={Filtro} alt="First slide" />
+                                <img className="d-block w-100" src={Filtro} />
                             </div>
                             <div className="carousel-item">
-                                <img className="d-block w-100" src={Filtro} alt="Second slide" />
+                                <img className="d-block w-100" src={Concept} />
                             </div>
                             <div className="carousel-item">
-                                <img className='d-block w-100' src={Filtro} />
+                                <img className='d-block w-100' src={ConceptCabelo} />
+                            </div>
+                            <div className="carousel-item">
+                                <img className='d-block w-100' src={Joaninha} />
+                            </div>
+                            <div className="carousel-item">
+                                <img className='d-block w-100' src={Poster01} />
+                            </div>
+                            <div className="carousel-item">
+                                <img className='d-block w-100' src={Festas} />
+                            </div>
+                            <div className="carousel-item">
+                                <img className='d-block w-100' src={Poster02} />
                             </div>
                         </div>
                         <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -114,7 +139,7 @@ export default class CaiporaPage extends Component {
                         </div>
                     </div>
                     <div className='w-100 flex ai-center jc-center'>
-                        <img src={Filtro} id="catarse-img" ></img>
+                        <img src={Financiamento} id="catarse-img" ></img>
                     </div>
                 </section>
 
@@ -127,8 +152,9 @@ export default class CaiporaPage extends Component {
                             <p className='text-caipora'>No final de 2020, a equipe de produção abriu uma seleção para encontrar mulheres negras que pudessem interpretar as vozes originais das personagens principais da animação e assim foram escolhidas as atrizes Fernanda Ribeiro - que deu voz às fases infantis de personagens marcantes como Rapunzel e Merida - e a atriz e cantora Tânia Viana, que dublou sequências musicais de grandes filmes recentes, como “Moana: Um Mar de Aventuras” (2016) e “O Rei Leão” (2019). Elas irão interpretar as personagens Luana e sua avó Dona Marinete, respectivamente.</p>
                         </div>
                     </div>
-                    <div className='w-100 flex ai-center jc-center'>
-                        <img src={Filtro} id="dublagem-img"></img>
+                    <div className='cards-container flex ai-center jc-space-btw'>
+                        <img src={VozLuana} className="w-40" id="dublagem-img"></img>
+                        <img src={VozMarinete} className="w-40" id="dublagem-img"></img>
                     </div>
                 </section>
                 <Footer />
